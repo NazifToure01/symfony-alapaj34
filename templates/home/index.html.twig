@@ -1,0 +1,158 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ALAPJ34 - Page d'acceuil{% endblock %}
+
+{% block body %}
+    {# Slider des images de la paillade #}
+    <div class="flex justify-center items-center md:mt-10 my-auto">
+        <img class=" h-auto w-full rounded-lg shadow-xl dark:shadow-gray-800" src="{{asset('assets/images/imageSlider1.png')}}" alt="image description">
+    </div>
+    
+    <div class="flex flex-row justify-center items-center mx-5 md:mx-[90px] my-5 md:my-12 space-x-8 md:space-x-30" >
+        <div>
+            <img src="{{ asset('assets/images/logoAlapaj34.png') }}" alt="">
+        </div>
+         <div>
+            <img src="{{ asset('assets/images/ALAPAJ34.jpeg') }}" alt="">
+        </div>
+         <div>
+            <img src="{{ asset('assets/images/budjet.png') }}" alt="">
+        </div>
+    </div>
+
+    <div class=" bg-[#222249] py-16 my-10 ">
+        <h3 class="text-lg md:text-3xl text-center font-bold mb-10  text-gray-50">Laissez-nous vous guider lors de votre inscription</h3>
+
+        <div class="flex flex-row justify-center items-center space-x-2 md:space-x-8 mx-4">
+
+            <div class="flex flex-row bg-white py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
+                <div>
+                    <img src="{{ asset("assets/images/s'inscrire.svg") }}" alt="" class="w-20 h-20 md:w-full md:h-full">
+                </div>
+                <div class="my-auto">
+                    <span class="font-bold mb-2 text-[15px] md:text-[15px]">S'inscrire</span>
+                    <p class="text-[10px] md:text-sm ">Choisissez votre type de compte: <br><span class="font-medium">particulier</span></p>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-center items-center space-x-2 md:space-x-8 mx-4">
+
+                <div class="flex flex-row bg-white py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
+                    <div>
+                        <img src="{{ asset("assets/images/s'identifier.svg") }}" alt="" class="w-20 h-20 md:w-full md:h-full">
+                    </div>
+                    <div class="my-auto">
+                        <span class="font-bold mb-2 text-[15px] md:text-[15px]">S'identifier</span>
+                        <p class="text-[10px] md:text-sm ">Complétez votre compte pour optimiser la mise en relation</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row justify-center items-center space-x-2 md:space-x-8 mx-4">
+                    <div class="flex flex-row bg-white py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
+                        <div>
+                            <img src="{{ asset("assets/images/profiter.svg") }}" alt="" class="w-20 h-20 md:w-full md:h-full">
+                        </div>
+                        <div class="my-auto">
+                            <span class="font-bold mb-2 text-[15px] md:text-[15px]">Profiter</span>
+                            <p class="text-[10px] md:text-sm ">Gérez vos évènements sans prise de tête</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex flex-col lg:flex-row justify-center items-center space-x-10">
+        <div class="">
+            <img src="{{ asset('assets/images/phone.jpg') }}" alt="" class="w-36 md:w-48">
+        </div>
+        <div class="mx-auto">
+            <h3 class=" text-center text-xl font-bold md:font-medium md:text-4xl my-8">Vous voulez proposer vos évènements ?</h3>
+            <p class="text-center text-sm justify-center items-center mr-5 my-8">Publiez vos services sur l’application et nous nous chargerons de votre visibilité !</p>
+            <div class="flex flex-row mb-2 space-x-5 mx-auto">
+                <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
+                    <div>
+                        <img src="{{ asset("assets/images/1er.png") }}" alt="" class="w-20 md:w-full md:h-full">
+                    </div>
+                    <div class="my-auto">
+                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">S'inscrire</span>
+                        <p class="text-[10px] md:text-sm ">Choisissez votre type de compte : particulier<br> et insérez les informations
+                            <br> demandées</p>
+                    </div>
+                </div>
+                <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
+                    <div>
+                        <img src="{{ asset("assets/images/2eme.png") }}" alt="" class="w-20  md:w-full md:h-full">
+                    </div>
+                    <div class="my-auto">
+                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">Rechercher</span>
+                        <p class="text-[10px] md:text-sm ">Choisissez votre catégorie d’évènement <br>
+                            (sport , culture, éducation..)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px] mb-5 mx-auto">
+                <div>
+                    <img src="{{ asset("assets/images/3eme.png") }}" alt="" class=" w-  md:w-full md:h-full">
+                </div>
+                <div class="my-auto">
+                    <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">Choisir un événement</span>
+                    <p class="text-[10px] md:text-sm ">Une liste d’évènements vous sera proposée <br>
+                        et vous pourrez choisir un créneau</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <img src="{{ asset('assets/images/paillade2.jpg') }}" alt="" class="w-72 md:w-96">
+        </div>
+    </div>
+
+
+
+    <div class="flex flex-col lg:flex-row  justify-center items-center space-x-10">
+
+        <div class="mx-auto">
+            <h3 class="text-center text-xl font-bold md:font-medium md:text-4xl my-8">Vous voulez proposer vos évènements ?</h3>
+            <p class="text-center text-sm justify-center items-center mr-5 my-8">Publiez vos services sur l’application et nous nous chargerons de votre visibilité !</p>
+            <div class="flex flex-row mb-2 space-x-5 mx-auto">
+                <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
+                    <div>
+                        <img src="{{ asset("assets/images/1er.png") }}" alt="" class="w-20 md:w-full md:h-full">
+                    </div>
+                    <div class="my-auto">
+                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">S'inscrire</span>
+                        <p class="text-[10px] md:text-sm ">Choisissez votre type de compte : particulier<br> et insérez les informations
+                            <br> demandées</p>
+                    </div>
+                </div>
+                <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
+                    <div>
+                        <img src="{{ asset("assets/images/2eme.png") }}" alt="" class="w-20  md:w-full md:h-full">
+                    </div>
+                    <div class="my-auto">
+                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">Rechercher</span>
+                        <p class="text-[10px] md:text-sm ">Choisissez votre catégorie d’évènement <br>
+                            (sport , culture, éducation..)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px] mb-5 mx-auto">
+                <div>
+                    <img src="{{ asset("assets/images/3eme.png") }}" alt="" class=" w-  md:w-full md:h-full">
+                </div>
+                <div class="my-auto">
+                    <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">Choisir un événement</span>
+                    <p class="text-[10px] md:text-sm ">Une liste d’évènements vous sera proposée <br>
+                        et vous pourrez choisir un créneau</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <img src="{{ asset('assets/images/paillade2.jpg') }}" alt="" class="w-72 md:w-96">
+        </div>
+    </div>
+
+
+
+{% endblock %}
