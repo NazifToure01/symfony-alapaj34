@@ -2,12 +2,60 @@
 
 {% block title %}ALAPJ34 - Page d'acceuil{% endblock %}
 
-{% block body %}
+{% block content %}
     {# Slider des images de la paillade #}
-    <div class="flex justify-center items-center md:mt-10 my-auto">
-        <img class=" h-auto w-full rounded-lg shadow-xl dark:shadow-gray-800" src="{{asset('assets/images/imageSlider1.png')}}" alt="image description">
+
+    <div class="mt-12 md:mt-20">
+        <div id="default-carousel" class="relative" data-carousel="slide" >
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden  md:h-[600px]">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{asset('assets/images/imageSlider1.png')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{asset('assets/images/imageSlider1.png')}}"  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{asset('assets/images/imageSlider1.png')}}"  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{asset('assets/images/imageSlider1.png')}}"  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{asset('assets/images/imageSlider1.png')}}"  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+            </button>
+        </div>
     </div>
-    
+
+
+
     <div class="flex flex-row justify-center items-center mx-5 md:mx-[90px] my-5 md:my-12 space-x-8 md:space-x-30" >
         <div>
             <img src="{{ asset('assets/images/logoAlapaj34.png') }}" alt="">
@@ -31,7 +79,7 @@
                 </div>
                 <div class="my-auto">
                     <span class="font-bold mb-2 text-[15px] md:text-[15px]">S'inscrire</span>
-                    <p class="text-[10px] md:text-sm ">Choisissez votre type de compte: <br><span class="font-medium">particulier</span></p>
+                    <p class="text-[10px] md:text-sm ">Choisissez votre type de compte: <span class="font-medium">particulier</span></p>
                 </div>
             </div>
 
@@ -67,9 +115,9 @@
         <div class="">
             <img src="{{ asset('assets/images/phone.jpg') }}" alt="" class="w-36 md:w-48">
         </div>
-        <div class="mx-auto">
-            <h3 class=" text-center text-xl font-bold md:font-medium md:text-4xl my-8">Vous voulez proposer vos évènements ?</h3>
-            <p class="text-center text-sm justify-center items-center mr-5 my-8">Publiez vos services sur l’application et nous nous chargerons de votre visibilité !</p>
+        <div class="">
+            <h3 class=" text-center text-xl font-bold md:font-medium md:text-4xl my-8 text-[#222249]">Vous cherchez un évènement près de chez vous ? </h3>
+            <p class="text-center md:text-lg text-sm justify-center items-center mr-5 my-8">Publiez vos services sur l’application et nous nous chargerons de votre visibilité !</p>
             <div class="flex flex-row mb-2 space-x-5 mx-auto">
                 <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
                     <div>
@@ -108,51 +156,70 @@
         </div>
     </div>
 
-
-
-    <div class="flex flex-col lg:flex-row  justify-center items-center space-x-10">
-
-        <div class="mx-auto">
-            <h3 class="text-center text-xl font-bold md:font-medium md:text-4xl my-8">Vous voulez proposer vos évènements ?</h3>
-            <p class="text-center text-sm justify-center items-center mr-5 my-8">Publiez vos services sur l’application et nous nous chargerons de votre visibilité !</p>
+    <div class="flex flex-col lg:flex-row my-8  md:mx-20 mx-10 px-2 py-6 rounded-2xl justify-center items-center space-x-2 bg-gray-100 ">
+        <div class="ml-3">
+            <h3 class=" text-center text-xl font-bold md:font-medium md:text-4xl my-8 text-[#222249]">Vous cherchez un évènement près de chez vous ? </h3>
+            <p class="text-center md:text-lg text-sm justify-center items-center mr-5 my-8">Publiez vos services sur l’application et nous nous chargerons de votre visibilité !</p>
             <div class="flex flex-row mb-2 space-x-5 mx-auto">
-                <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
-                    <div>
-                        <img src="{{ asset("assets/images/1er.png") }}" alt="" class="w-20 md:w-full md:h-full">
-                    </div>
+
+                <div class="flex flex-row  bg-white py-3 px-4 rounded-lg justify-center items-center space-x-5">
+
                     <div class="my-auto">
-                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">S'inscrire</span>
+                        <span class=" font-semibold text-[15px] md:text-[15px] text-text-[#222249]"><img src="{{ asset('assets/images/num1blu.png') }}"alt=""></span>
+                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#222249]">S'inscrire</span>
                         <p class="text-[10px] md:text-sm ">Choisissez votre type de compte : particulier<br> et insérez les informations
                             <br> demandées</p>
                     </div>
                 </div>
-                <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px]">
-                    <div>
-                        <img src="{{ asset("assets/images/2eme.png") }}" alt="" class="w-20  md:w-full md:h-full">
-                    </div>
+
+                <div class="flex flex-row bg-white  py-3 px-4 rounded-lg justify-center items-center space-x-5">
+
                     <div class="my-auto">
-                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">Rechercher</span>
+                        <span class=" font-semibold  text-[15px] md:text-[15px] text-text-[#222249]"><img src="{{ asset('assets/images/blue2.png') }}"alt=""></span>
+                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#222249]">Rechercher</span>
                         <p class="text-[10px] md:text-sm ">Choisissez votre catégorie d’évènement <br>
                             (sport , culture, éducation..)</p>
                     </div>
                 </div>
-            </div>
-            <div class="flex flex-row hover:bg-white lg:hover:bg-orange-50 py-3 px-4 rounded-lg justify-center items-center h-auto md:h-[120px] w-auto md:w-[400px] mb-5 mx-auto">
-                <div>
-                    <img src="{{ asset("assets/images/3eme.png") }}" alt="" class=" w-  md:w-full md:h-full">
+
+                 <div class="flex flex-row bg-white  py-3 px-4 rounded-lg justify-center items-center space-x-5">
+                     <div class="my-auto">
+                        <span class=" font-semibold  text-[15px] md:text-[15px] text-text-[#222249]"><img src="{{ asset('assets/images/3emeBleu.png') }}"alt=""></span>
+                        <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-text-[#222249]">Rechercher</span>
+                        <p class="text-[10px] md:text-sm ">Choisissez votre catégorie d’évènement <br>
+                            (sport , culture, éducation..)</p>
+                    </div>
                 </div>
-                <div class="my-auto">
-                    <span class="font-semibold mb-2 text-[15px] md:text-[15px] text-[#EF5B00]">Choisir un événement</span>
-                    <p class="text-[10px] md:text-sm ">Une liste d’évènements vous sera proposée <br>
-                        et vous pourrez choisir un créneau</p>
-                </div>
+
             </div>
+
+
         </div>
-        <div class="">
-            <img src="{{ asset('assets/images/paillade2.jpg') }}" alt="" class="w-72 md:w-96">
+        <div class="mt-10 md:mt-0">
+            <img class=" rounded-2xl w-96 h-96  " src="{{asset('assets/images/phone2.jpg')}}" alt="image description">
         </div>
     </div>
+    
+    <div class="">
+        <img src="{{ asset('assets/images/bannerBottome.jpg') }}" alt="">
+    </div>
 
-
+    <div class="flex flex-row justify-center items-center md:justify-between mt-8 mb-5 md:mt-10 md:mb-5 mx-1 md:mx-32">
+        <div></div>
+        <div><span class="mx-5 text-sm md:text-2xl font-bold">Support </span> <span class="mx-5 font-bold">Qui sommes nous ?</span></div>
+        <div class="flex flex-row space-x-1 md:space-x-5">
+            <img src="{{ asset('assets/images/twitter.png') }}" alt="" width="15px">
+            <img src="{{ asset('assets/images/facebook.png') }}" alt="" width="15px">
+            <img src="{{ asset('assets/images/instagram.png') }}" alt="" width="15px">
+        </div>
+    </div>
+    <div class="flex flex-col w-100 justify-center items-center py-2 mx-5 mb-14 ">
+        <hr class="mb-5"  style="width: 72%;">
+        <div class="flex flex-row items-center justify-center">
+            <div class="text-[8px] md:text-[12px] text-gray-500 mx-[5px] md:mx-40 md:font-semibold font-bold">© Copyright 2022,Tous Droits Réservés</div>
+            <div class="text-[8px] md:text-[12px] text-gray-500 mx-[5px] md:mx-40 md:font-semibold font-bold" >Politique de confidentialité</div>
+            <div class="text-[8px] md:text-[12px] text-gray-500 mx-[5px] md:mx-40 md:font-semibold font-bold">Termes et conditions</div>
+        </div>
+    </div>
 
 {% endblock %}
