@@ -4,7 +4,6 @@
 
 {% block content %}
     <div class="flex justify-center items-center mt-20 md:mt-24">
-
         <div class=" w-auto  mx-auto">
             <form class="flex items-center">
                 <label for="simple-search" class="sr-only">Search</label>
@@ -12,10 +11,133 @@
                     <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                         <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                     </div>
-                    <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full w-[300px] pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+                    <input type="text" id="simple-search"  class="bg-gray-50 focus:border-1 focus:border-[#EF5B00] border-gray-300 text-gray-900 text-sm rounded-lg  block  w-[300px] pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#EF5B00] dark:focus:border-[#EF5B00]" placeholder="Search" required>
                 </div>
-                <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-[#EF5B00] rounded-lg border border-blue-700 hover:bg-[#222248] focus:ring-2 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
             </form>
+        </div>
+    </div>
+
+    <div class=" justify-center items-center grid md:grid-cols-4 md:gap-4 grid-cols-2 gap-2 mx-10 my-10 md:mx-32  ">
+        <div class="">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 pt-5">
+                <img class="object-cover w-full rounded-t-lg  md:rounded-none md:rounded-l-lg px-6" src="{{ asset('assets/images/budjet.png') }}" alt="" style="width: 150px; height: 100px ">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 font-bold text-sm text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021</p>
+                    <button type="button" class="text-white bg-gradient-to-br from-[#EF5B00] to-[#222248] hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-[#EF5B00] dark:focus:ring-[#EF5B00] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">En savoir plus</button>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 pt-5">
+                <img class="object-cover w-full rounded-t-lg  md:rounded-none md:rounded-l-lg px-6" src="{{ asset('assets/images/ALAPAJ34.jpeg') }}" alt="" style="width: 150px; height: 100px ">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 font-bold text-sm text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021</p>
+                    <button type="button" class="text-white bg-gradient-to-br from-[#EF5B00] to-[#222248] hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-[#EF5B00] dark:focus:ring-[#EF5B00] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">En savoir plus</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 pt-5">
+                <img class="object-cover w-full rounded-t-lg  md:rounded-none md:rounded-l-lg px-6" src="{{ asset('assets/images/logoAlapaj34.png') }}" alt="" style="width: 150px; height: 100px ">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 font-bold text-sm text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021</p>
+                    <button type="button" class="text-white bg-gradient-to-br from-[#EF5B00] to-[#222248] hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-[#EF5B00] dark:focus:ring-[#EF5B00] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">En savoir plus</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 pt-5">
+                <img class="object-cover w-full rounded-t-lg  md:rounded-none md:rounded-l-lg px-6" src="{{ asset('assets/images/ALAPAJ34.jpeg') }}" alt="" style="width: 150px; height: 100px ">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 font-bold text-sm text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021</p>
+                    <button type="button" class="text-white bg-gradient-to-br from-[#EF5B00] to-[#222248] hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-[#EF5B00] dark:focus:ring-[#EF5B00] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">En savoir plus</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 pt-5">
+                <img class="object-cover w-full rounded-t-lg  md:rounded-none md:rounded-l-lg px-6" src="{{ asset('assets/images/budjet.png') }}" alt="" style="width: 150px; height: 100px ">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 font-bold text-sm text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021</p>
+                    <button type="button" class="text-white bg-gradient-to-br from-[#EF5B00] to-[#222248] hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-[#EF5B00] dark:focus:ring-[#EF5B00] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">En savoir plus</button>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 pt-5">
+                <img class="object-cover w-full rounded-t-lg  md:rounded-none md:rounded-l-lg px-6" src="{{ asset('assets/images/ALAPAJ34.jpeg') }}" alt="" style="width: 150px; height: 100px ">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 font-bold text-sm text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021</p>
+                    <button type="button" class="text-white bg-gradient-to-br from-[#EF5B00] to-[#222248] hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-[#EF5B00] dark:focus:ring-[#EF5B00] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">En savoir plus</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 pt-5">
+                <img class="object-cover w-full rounded-t-lg  md:rounded-none md:rounded-l-lg px-6" src="{{ asset('assets/images/logoAlapaj34.png') }}" alt="" style="width: 150px; height: 100px ">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 font-bold text-sm text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021</p>
+                    <button type="button" class="text-white bg-gradient-to-br from-[#EF5B00] to-[#222248] hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-[#EF5B00] dark:focus:ring-[#EF5B00] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">En savoir plus</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="">
+            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 pt-5">
+                <img class="object-cover w-full rounded-t-lg  md:rounded-none md:rounded-l-lg px-6" src="{{ asset('assets/images/ALAPAJ34.jpeg') }}" alt="" style="width: 150px; height: 100px ">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 font-bold text-sm text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021</p>
+                    <button type="button" class="text-white bg-gradient-to-br from-[#EF5B00] to-[#222248] hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-[#EF5B00] dark:focus:ring-[#EF5B00] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">En savoir plus</button>
+                </div>
+            </a>
+        </div>
 
     </div>
+    <div class="flex justify-center items-center">
+        <nav aria-label="Page navigation example">
+            <ul class="inline-flex -space-x-px">
+                <li>
+                    <a href="#" class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                </li>
+                <li>
+                    <a href="#" aria-current="page" class="px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+                </li>
+                <li>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    {{ include('_parials/footer.html.twig') }}
+
 {% endblock %}
